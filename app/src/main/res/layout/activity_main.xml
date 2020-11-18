@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="80dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="87dp"
+            android:text="Series calculator"
+            android:gravity="center"
+            android:textSize="40dp"
+            />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="122dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="96dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="45dp"
+                android:layout_height="64dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="geometric" />
+
+            <Switch
+                android:id="@+id/sw"
+                android:layout_width="110dp"
+                android:layout_height="65dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="106dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Mathematical" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="341dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="312dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="485dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="33dp"
+                        android:gravity="center"
+                        android:text="Adds / multiplies" />
+
+                    <EditText
+                        android:id="@+id/ed1"
+                        android:layout_width="match_parent"
+                        android:layout_height="69dp"
+                        android:ems="10"
+                        android:inputType="numberDecimal" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:gravity="center"
+                        android:text="start" />
+
+                    <EditText
+                        android:id="@+id/ed2"
+                        android:layout_width="match_parent"
+                        android:layout_height="72dp"
+                        android:ems="10"
+                        android:inputType="numberDecimal" />
+
+                    <Button
+                        android:id="@+id/calculation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="calculat"
+                        android:text="calculation" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="cred"
+                        android:text="credits" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
